@@ -14,7 +14,6 @@ const generateRandomUsers = () => {
 
   fs.writeFile('./users.json', JSON.stringify(data), function (err) {
     if (err) throw err
-    console.log('JSON Users Generated!')
   })
 }
 

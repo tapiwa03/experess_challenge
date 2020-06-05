@@ -22,23 +22,23 @@ router.get('/users/:id', (req, res) => {
 })
 
 router.get('*', (req, res) => {
-  res.send('This route does not exist')
+  res.status(404).send('This route does not exist')
 })
 
 router.post('*', (req, res) => {
-  res.send('This method is not allowed')
+  res.status(405).send('This method is not allowed')
 })
 
 router.put('*', (req, res) => {
-  res.send('This method is not allowed')
+  res.status(405).send('This method is not allowed')
 })
 
 router.patch('*', (req, res) => {
-  res.send('This method is not allowed')
+  res.status(405).send('This method is not allowed')
 })
 
 router.delete('*', (req, res) => {
-  res.send('This method is not allowed')
+  res.status(405).send('This method is not allowed')
 })
 
 export { router as indexRoute }
