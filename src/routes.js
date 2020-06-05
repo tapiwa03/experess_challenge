@@ -13,7 +13,6 @@ router.get('/', (req, res) => {
 
 router.get('/users', (req, res) => {
   const users = getUsers()
-  console.log(users)
   res.send(users)
 })
 
