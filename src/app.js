@@ -6,4 +6,4 @@ const app = express()
 app.use(cors())
 app.use('', indexRoute)
 
-export default app;
+export default app
